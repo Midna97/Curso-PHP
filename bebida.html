@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bebidas</title>
+        <link rel="stylesheet" type="text/css" href="estilos.css"/>
+    </head>
+    <body>
+        <header>
+            <main class="multi-bg-example">
+                <section>
+                    <h1 class="box">Bebidas</h1>
+                </section>
+                <section id="receta-list">
+                    <div class="receta-item" onclick="showbebidas('mojito')">
+                        <img src="img/mojitofresa.jpg" class="img-normalizada" alt="Mojito de fresa"/>
+                        <h3>Mojito</h3>
+                    </div>
+                    <div class="receta-item" onclick="showbebidas('limonada')">
+                        <img src="img/limon.jpg" class="img-normalizada" alt="Limonada"/>
+                        <h3>Limonada</h3>
+                    </div>
+                    <div class="receta-item" onclick="showbebidas('naranjada')">
+                        <img src="img/naranja.jpg" class="img-normalizada" alt="Naranjada"/>
+                        <h3>Naranjada</h3>
+                    </div>
+
+                </section>
+                <section id="receta-detail" style="display: inline-flex;">
+                    <button onclick="hidebebidas()">Salir</button>
+                    <h2 id="bebidas-title"></h2>
+                    <p id="bebidas-description"></p>
+                    <p id="bebidas-instructions"></p>
+                </section>
+            </main>
+            <script src="bebida.js"></script>
+        </header>
+    </body>
+</html>
+
+

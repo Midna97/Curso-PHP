@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Postre</title>
+        <link rel="stylesheet" type="text/css" href="estilos.css"/>
+    </head>
+    <body>
+        <header>
+            <main class="multi-bg-example">
+                <section>
+                    <h1 class="box">Postre</h1>
+                </section>          
+                <section id="receta-list">
+                    <div class="receta-item" onclick="showpostres('tarta')">
+                        <img src="img/tarta.jpg" class="img-normalizada" alt="Tarta"/>
+                        <h3>Tarta</h3>
+                    </div>
+                    <div class="receta-item" onclick="showpostres('mouse')">
+                        <img src="img/mouse.jpg" class="img-normalizada" alt="Mouse de coco"/>
+                        <h3>Mouse de coco</h3>
+                    </div>
+                    <div class="receta-item" onclick="showpostres('carlota')">
+                        <img src="img/carlota.jpg" class="img-normalizada" alt="Carlota"/>
+                        <h3>Carlota</h3>
+                    </div>
+
+                </section>
+                <section id="receta-detail" style="display: inline-flex;">
+                    <button onclick="hidepostres()">Salir</button>
+                    <h2 id="postres-title"></h2>
+                    <p id="postres-description"></p>
+                    <p id="postres-instructions"></p>
+                </section>
+            </main>
+            <script src="postre.js"></script>
+        </header>
+    </body>
+</html>
+
+

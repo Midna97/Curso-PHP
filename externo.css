@@ -1,0 +1,33 @@
+body {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(36, 194, 218, 0.73);
+}
+
+.user{
+  padding: 10px;
+    display:grid;
+    width: calc(10% - 20px);
+    background-color: rgba(36, 194, 218, 0.73);
+    color: hsla(0, 57%, 3%, 0.904);
+    border-radius: 5%;
+    line-height: 50px;
+    
+    
+}
+.positioned{
+  top: 30px;
+  left: 30px;
+
+}
+
+.login{
+  width: 300px;
+  margin: 80px auto;
+  padding: 40px;
+  position: relative;
+}
+
+
+

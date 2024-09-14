@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Comida</title>
+        <link rel="stylesheet" type="text/css" href="estilos.css"/>
+    </head>
+    <body>
+        <header>
+            <main class="multi-bg-example">
+                <section>
+                    <h1 class="box">Comida</h1>
+                </section>
+                <section id="receta-list">
+                    <div class="receta-item" onclick="showalimentos('lasagna')">
+                        <img src="img/lasagna.jpg" class="img-normalizada" alt="Lasagna"/>
+                        <h3>Lasagna</h3>
+                    </div>
+                    <div class="receta-item" onclick="showalimentos('burrito')">
+                        <img src="img/burrito.jpg" class="img-normalizada" alt="Burrito"/>
+                        <h3>Burrito</h3>
+                    </div>
+                    <div class="receta-item" onclick="showalimentos('tacos')">
+                        <img src="img/tacos.jpg" class="img-normalizada" alt="Tacos"/>
+                        <h3>Tacos</h3>
+                    </div>
+
+                </section>
+                <section id="receta-detail" style="display: inline-flex;">
+                    <button onclick="hidealimentos()">Salir</button>
+                    <h2 id="comida-title"></h2>
+                    <p id="comida-description"></p>
+                    <p id="comida-instructions"></p>
+                </section>
+            </main>
+            <script src="receta.js"></script>
+        </header>
+    </body>
+</html>
+
+
