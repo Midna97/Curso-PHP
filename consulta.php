@@ -1,10 +1,10 @@
 <?php
-header('Content-Type', 'application/JSON');
-$input = file_get_contents('php://input');
-$data = json_decode($input,true);
+header('Content-Type', 'application/json');
+//$input = file_get_contents('php://input');
+//$data = json_decode($input,true); El método GET  solo recibe parametros, no un body asi que no es necesario leer el archivo json.
 
-if($_SERVER['REQUEST_METHOD' == 'GET']){
-    $alimentos= $data['alimentos'];
+if($_SERVER['REQUEST_METHOD'] == 'GET'){
+    $alimentos = $_GET['alimentos'];
 
     switch ($alimentos){
         case 'lasagna':
