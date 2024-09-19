@@ -146,48 +146,7 @@ function hidealimentos() {
     document.getElementById('receta-detail').style.display = 'none';
 
 }
-/**
- * @param postre
- */
-function showpostres(postre){
-    const detailSection = document.getElementById('receta-detail');
-    let title = '';
-    let description = '';
-    let instructions = '';
-    
-    switch (postre) {
-        case 'tarta':
-            title = "Tarta";
-            description = "Tarta";
-            instructions = "sdhfkjhgjkdfhgkjsdf";
-            break;
-        case 'mouse':
-            title = "Mouse";
-            description = "Mouse de coco";
-            instructions = "sdhfkjhgjkdfhgkjsdf";
-            break;
-        case 'carlota':
-            title = "Carlota";
-            description = "Carlota";
-            instructions = "sdhfkjhgjkdfhgkjsdf";
-            break;    
-        default:
-            title = "Receta No Encontrada";
-            description = "Lo sentimos, no se encontró la receta seleccionada.";
-            instructions = "Lo sentimos no se encontró la receta seleccionada";
-            break; 
-    }
-    document.getElementById('postre-title').innerText = title;
-    document.getElementById('postre-description').innerText = description;
-    document.getElementById('postre-instructions').innerText = instructions;
-    detailSection.style.display = 'block';
-}
-/**
- * 
- */
-function hidepostres(){
-    document.getElementById('receta-detail').style.display = 'none';
-}
+
 
 
 

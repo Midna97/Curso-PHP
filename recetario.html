@@ -5,10 +5,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Recetario</title>
         <link rel="stylesheet" type="text/css" href="estilos.css"/>
+        <script src="script1.js"></script>
     </head>
     <body>
         <header>
+            <h1 id="mensajeBienvenida"></h1>
+
+    <script>
+        // Obtener el nombre del usuario de localStorage
+        var user = localStorage.getItem('usuario');
+        if (user) {
+            document.getElementById('mensajeBienvenida').innerText = 'Bienvenido, ' + user + '!';
+        } else {
+            document.getElementById('mensajeBienvenida').innerText = 'Bienvenido!';
+        }
+    </script>
             <main class="multi-bg-example">
+                <h2>Menú</h2>
                <div class="my-image">
                 <a href="comida.html"><img class="box" src="img/comida.png" alt="Comida"/></a>
                 <a href="postre.html"><img class="box" src="img/postres.png" alt="Postres"></a>
@@ -16,6 +29,7 @@
                </div>
             </main>
             <script src="receta.js"></script>
+            
         </header>
     </body>
 </html>
