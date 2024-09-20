@@ -91,12 +91,12 @@ function showpostres(postres){
         case 'mouse':
             title = "Mouse";
             description = "Mouse de coco";
-            instructions = "Licúa leche condensada con leche evaporada y sin dejar de licuar, agrega el jugo de limón. En un refractario, coloca una capa de galletas, un poco de la mezcla de limón y repite hasta terminar.";
+            instructions = "Calentar en una cazuela la leche y la crema de coco. Disolver en la mezcla la gelatina y dejar enfriar. Batir las claras a punto de nieve. Montar la nata. Añadir la leche de coco a la nata montada y se mezcla todo con movimiento envolvente. Añadir finalmente las claras montadas con movimiento envolvente y dejar enfriar en copas.";
             break;
         case 'carlota':
             title = "Carlota"
             description = "Carlota";
-            instructions = "En un vaso alto agregar hojas de menta y azúcar.Añada la pulpa, la soda, el jugo de limón y si lo desea el ron.";
+            instructions = "Licúa leche condensada con leche evaporada y sin dejar de licuar, agrega el jugo de limón. En un refractario, coloca una capa de galletas, un poco de la mezcla de limón y repite hasta terminar.";
             break;
         default:
             title = "Receta No Encontrada";
@@ -114,7 +114,7 @@ function showpostres(postres){
  */
 function hidepostres() {
     document.getElementById('receta-detail').style.display = 'none';
-
+    
 }
 
 

@@ -42,17 +42,17 @@ function showbebidas(bebidas){
         case 'mojito':
             title = "Mojito";
             description = "Mojito de fresa";
-            instructions = "Precalienta el Horno a 180º. Aparte acitrona la cebolla, la zanahora y cocina por 5 min. Añade la carne, cocina 5 min y agrega el jitomate. En un recipiente agrega una capa con la pasta, seguido de una capa de carne, encìma agergar queso. Repetir el proceso hasta llenar el recipiente, tapa y cocina a 180º por media hora."
+            instructions = "En un vaso alto agregar hojas de menta y azúcar.Añada la pulpa de fresa, la soda, el jugo de limón y si lo desea el ron."
             break;
         case 'limonada':
             title = "Limonada";
             description = "Limonada";
-            instructions = "Licúa leche condensada con leche evaporada y sin dejar de licuar, agrega el jugo de limón. En un refractario, coloca una capa de galletas, un poco de la mezcla de limón y repite hasta terminar.";
+            instructions = "Lava bien un limón y retírale la piel (sin la parte blanca). Pon la piel en el vaso de la batidora. Pela los 4 limones de modo que solo queden los gajos, sin piel ni parte blanca. Retira las pepitas.Pon los limones y el azúcar en el vaso de la batidora y tritura todo. Añade el hielo y el agua al vaso de la batidora. Tritura de nuevo hasta que quede todo bien integrado. Cuela la limonada.";
             break;
         case 'naranjada':
             title = "Naranjada";
             description = "Naranjada";
-            instructions = "En un vaso alto agregar hojas de menta y azúcar.Añada la pulpa, la soda, el jugo de limón y si lo desea el ron.";
+            instructions = "Lavar y pelar la naranja, poner en la licuadora con el agua y azúcar. Naranjada mineral. Licuar y colar en la jarra donde la presentarán. Poner poco a poco el agua mineral para así conservar más su sabor.";
             break;
         default:
             title = "Receta No Encontrada";
