@@ -13,15 +13,15 @@
                     <h1 class="box">Comida</h1>
                 </section>
                 <section id="receta-list">
-                    <div class="receta-item" onclick="showalimentos('lasagna')">
+                    <div class="receta-item" onclick="getalimentos('lasagna')">
                         <img src="img/lasagna.jpg" class="img-normalizada" alt="Lasagna"/>
                         <h3>Lasagna</h3>
                     </div>
-                    <div class="receta-item" onclick="showalimentos('burrito')">
+                    <div class="receta-item" onclick="getalimentos('burrito')">
                         <img src="img/burrito.jpg" class="img-normalizada" alt="Burrito"/>
                         <h3>Burrito</h3>
                     </div>
-                    <div class="receta-item" onclick="showalimentos('tacos')">
+                    <div class="receta-item" onclick="getalimentos('tacos')">
                         <img src="img/tacos.jpg" class="img-normalizada" alt="Tacos"/>
                         <h3>Tacos</h3>
                     </div>
@@ -29,13 +29,12 @@
                 </section>
                 <section id="receta-detail" style="display: inline-flex;">
                     <button onclick="hidealimentos()">Salir</button>
-                    <h2 id="comida-title"></h2>
-                    <p id="comida-description"></p>
-                    <p id="comida-instructions"></p>
+                    <h2 id="title"></h2>
+                    <p id="description"></p>
+                    <p id="instructions"></p>
                 </section>
             </main>
-            <script src="receta.js"></script>
-            <script src="script1.js"></script>
+            <script src="alimentos.js"></script>
         </header>
     </body>
 </html>

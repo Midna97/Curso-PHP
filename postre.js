@@ -86,7 +86,7 @@ function showpostres(postres){
         case 'tarta':
             title = "Tarta";
             description = "Tarta";
-            instructions = "Precalienta el Horno a 180º. Aparte acitrona la cebolla, la zanahora y cocina por 5 min. Añade la carne, cocina 5 min y agrega el jitomate. En un recipiente agrega una capa con la pasta, seguido de una capa de carne, encìma agergar queso. Repetir el proceso hasta llenar el recipiente, tapa y cocina a 180º por media hora."
+            instructions = "Para la base, mezcla las galletas Marías con ½ barra de mantequilla, vierte en un molde para tarta, presiona ligeramente para formar una costra y refrigera.Para el relleno, bate el Chocolate para Mesa ABUELITA® con la crema batida y agrega poco a poco ½ barra de mantequilla. Vierte la mezcla en el molde para tarta y refrigera. Decora con los frutos rojos y las hojas de menta."
             break;
         case 'mouse':
             title = "Mouse";

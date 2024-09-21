@@ -13,15 +13,15 @@
                     <h1 class="box">Bebidas</h1>
                 </section>
                 <section id="receta-list">
-                    <div class="receta-item" onclick="showbebidas('mojito')">
+                    <div class="receta-item" onclick="getalimentos('mojito')">
                         <img src="img/mojitofresa.jpg" class="img-normalizada" alt="Mojito de fresa"/>
                         <h3>Mojito</h3>
                     </div>
-                    <div class="receta-item" onclick="showbebidas('limonada')">
+                    <div class="receta-item" onclick="getalimentos('limonada')">
                         <img src="img/limon.jpg" class="img-normalizada" alt="Limonada"/>
                         <h3>Limonada</h3>
                     </div>
-                    <div class="receta-item" onclick="showbebidas('naranjada')">
+                    <div class="receta-item" onclick="getalimentos('naranjada')">
                         <img src="img/naranja.jpg" class="img-normalizada" alt="Naranjada"/>
                         <h3>Naranjada</h3>
                     </div>
@@ -29,12 +29,12 @@
                 </section>
                 <section id="receta-detail" style="display: inline-flex;">
                     <button onclick="hidebebidas()">Salir</button>
-                    <h2 id="bebidas-title"></h2>
-                    <p id="bebidas-description"></p>
-                    <p id="bebidas-instructions"></p>
+                    <h2 id="title"></h2>
+                    <p id="description"></p>
+                    <p id="instructions"></p>
                 </section>
             </main>
-            <script src="bebida.js"></script>
+            <script src="alimentos.js"></script>
         </header>
     </body>
 </html>
