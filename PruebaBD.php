@@ -9,7 +9,6 @@ try {
     $dns = "sqlsrv:server=$serverName,$port;Database=$database";
     $conn = new PDO($dns, $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Conexión exitosa a SQL Server.";
 } catch (PDOException $e) {
     echo "Conexión fallida: " . $e->getMessage();
 }

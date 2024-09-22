@@ -1,6 +1,6 @@
 <?php
 
-include "PruebaBD";
+include "PruebaBD.php";
 
 header('Content-Type', 'application/json');
 //$input = file_get_contents('php://input');
@@ -9,7 +9,7 @@ header('Content-Type', 'application/json');
 if($_SERVER['REQUEST_METHOD'] == 'GET'){
     $alimentos = $_GET['alimentos'];
 
-    switch ($alimentos){
+    /*switch ($alimentos){
         case 'lasagna':
             echo json_encode([
                 'success' => true,
@@ -80,6 +80,79 @@ if($_SERVER['REQUEST_METHOD'] == 'GET'){
                     ]);
                     break;
 
-    }
+    }*/
+
+    try{
+
+    
+
+    // Consulta para obtener el usuario
+    $sql = "SELECT * FROM recetas WHERE titulo = :title";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute(['title' => $alimentos]);
+    $result = $stmt->fetchALL(PDO::FETCH_ASSOC);
+
+    foreach ($result as $item) {
+        echo json_encode([
+            'success' => true,
+            'title' => $item['titulo'],
+            'description' => $item['descripcion'],
+            'instructions' => $item['instrucciones'],
+        ]);      
+    }   
+    
+}      
+
+catch (PDOException $error){
+    echo json_encode([
+        'success' => false,
+        'message' => 'Receta no encontrada',
+        
+    ]);    
+
+
+}
+
+   
+   
+   //Estilo por procedimientos
+
+   /*$enlace = mysqli_connect("localhost", "sa", "", "world");
+   
+   // comprobar la conexión 
+   if (mysqli_connect_errno()) {
+       printf("Falló la conexión: %s\n", mysqli_connect_error());
+       exit();
+   }
+   
+   $ciudad = "Amersfoort";
+   
+   // crear una sentencia preparada 
+   $sentencia = mysqli_stmt_init($enlace);
+   if (mysqli_stmt_prepare($sentencia, 'SELECT District FROM City WHERE Name=?')) {
+   
+        //vincular los parámetros para los marcadores 
+       mysqli_stmt_bind_param($sentencia, "s", $ciudad);
+   
+    // ejecutar la consulta 
+       mysqli_stmt_execute($sentencia);
+   
+       //vincular las variables de resultados 
+       mysqli_stmt_bind_result($sentencia, $distrito);
+   
+       // obtener el valor 
+       mysqli_stmt_fetch($sentencia);
+   
+       printf("%s está en el distrito de %s\n", $ciudad, $distrito);
+   
+       // cerrar la sentencia 
+       mysqli_stmt_close($sentencia);
+   }
+   
+   //cerrar la conexión 
+   mysqli_close($enlace);*/
+
+   
+
 }
 ?>
